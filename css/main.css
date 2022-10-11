@@ -117,6 +117,9 @@ header {
   flex-direction: column;
 }
 
+
+/* BUTTON STYLES */
+
 .green-ios-button {
   background-color: #38a897;
   display: inline-block; 
@@ -126,7 +129,7 @@ header {
   font-family: 'Bai Jamjuree', sans-serif; 
   font-weight: 400; 
   color: white; 
-  font-size: 20px; 
+  font-size: 1rem; 
   padding: 15px; 
 }
 
@@ -139,7 +142,7 @@ header {
   font-family: 'Bai Jamjuree', sans-serif; 
   font-weight: 400; 
   color: white; 
-  font-size: 20px; 
+  font-size: 1rem; 
   padding: 15px; 
 }
 
@@ -186,12 +189,17 @@ footer {
 
 body {
   text-align: center;
-}
-
-header {
   background-image: url(../images/bg-header-mobile.png); 
   background-repeat: no-repeat; 
-  background-size: 100%
+  background-size: 100%;
+}
+
+.header-container {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 header img {
@@ -335,17 +343,20 @@ figure img {
 
    .buttons {
     display: flex; 
+    justify-content: space-between;
     align-items: center;
-    width: 70%; 
+    margin: 20px 30px; 
    } 
 
-  .green-ios-button {
-    width: 30%; 
-    }
+   .green-ios-button {
+    font-size: 1.5rem;
+    padding: 1rem; 
+   }
 
-  .blue-mac-button {
-    width: 30%; 
-    }
+   .blue-mac-button {
+     font-size: 1.5rem;
+     padding: 1rem;
+   }
 
 
 }
@@ -354,11 +365,37 @@ figure img {
 @media only screen and (min-width: 1200px) {
  
   body {
-    font-size: 2.0rem;
+    font-size: 1.8rem;
   }
 
-  header {
-    width: 40%; 
+  .header-container {
+    width: 80%; 
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .green-ios-button {
+    max-width: 40%; 
+  }
+
+  .blue-mac-button {
+    max-width: 40%; 
+  }
+
+
+
+  .tools {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .companies {
+    max-width: 70%;
+    flex-direction: row;
   }
 }
 
