@@ -7,6 +7,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/main.css"> 
   <script src="https://kit.fontawesome.com/00e7f7acda.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Clipboard landing page</title>
 
@@ -18,21 +21,30 @@
 </head>
 <body>
 
-  <img class="main-logo" src="./images/logo.svg" alt="Clipboard logo"/> 
+  <header>
 
-  <h1>A history of everything you copy</h1>
+    <img class="main-logo" src="./images/logo.svg" alt="Clipboard logo"/> 
 
-  <p class="description">Clipboard allows you to track and organize everything you 
-  copy. Instantly access your clipboard on all your devices.</p>
+    <h1>A history of everything you copy</h1>
 
-  <button class="green-ios-button">Download for iOS</button>
-  <button class="blue-mac-button">Download for Mac</button>
+    <p class="description">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+
+    <div class="buttons">
+
+    <button class="green-ios-button">Download for iOS</button>
+    <button class="blue-mac-button">Download for Mac</button>
+
+  </div>
+
+</header>
+
+<div class="clipboard-features">
 
   <h2>Keep track of your snippets</h2>
 
-  <p class="description">Clipboard instantly stores any item you copy in the cloud, 
-  meaning you can access your snippets immediately on all your 
-  devices. Our Mac and iOS apps will help you organize everything.</p>
+  <p class="description">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+
+  <figure><img class="monitor-image" src="./images/image-computer.png"/></figure>
 
   <h3>Quick Search</h3>
 
@@ -46,11 +58,17 @@
 
   <p class="description">Retrieve any snippets from the first moment you started using the app.</p>
 
+</div>
+
+<div class="clipboard-actions">
+
   <h2>Access Clipboard anywhere</h2>
 
   <p class="description">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
 
-  <img class="devices" src="./images/image-devices.png" alt="iPhone and iPad"/>
+  <figure>
+    <img src="./images/image-devices.png" alt="iPhone and iPad"/>
+  </figure>
 
   <h2>Supercharge your workflow</h2>
 
@@ -74,6 +92,12 @@
 
   <p class="description">Quick preview of all snippets on your Clipboard for easy access.</p>
 
+</div>
+
+
+
+<div class="companies">
+
   <img class="brand-logo" src="./images/logo-google.png" alt="Google logo" />
 
   <img class="brand-logo" src="./images/logo-ibm.png" alt="IBM logo" />
@@ -84,6 +108,9 @@
 
   <img class="brand-logo" src="./images/logo-vector-graphics.png" alt="Vector Graphics logo" />
 
+</div>
+
+<div class="bottom-section">
   <h2>Clipboard for iOS and Mac OS</h2>
 
   <p class="description">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
@@ -91,16 +118,19 @@
   <button class="green-ios-button">Download for iOS</button>
   <button class="blue-mac-button">Download for Mac</button>
 
-  
+</div>
+
   
   <footer>
-    <p class="footer-links">
-      FAQs <br>
-      Contact Us <br>
-      Privacy Policy <br>
-      Press Kit <br>
-      Install Guide <br>
-    </p>
+    <img class="footer-logo" src="./images/logo.svg" />
+
+    <section id="footer-links">
+     <p>FAQs</p>
+     <p>Contact Us</p>
+     <p>Privacy Policy</p>
+     <p>Press Kit</p>
+     <p>Install Guide</p>
+    </section>
 
     <div class="social-icons">
       <p>

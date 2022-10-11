@@ -87,18 +87,150 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* BASE STYLES */
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif; 
+  font-size: 18px; 
+}
+
+h1,
+h2,
+h3 {
+  color:#4C545D; 
+}
+
+p {
+  color: #9FABB2; 
+}
+
+.monitor-image {
+  margin-top: 4rem;
+}
+
+/* HEADER STYLES */
+
+header {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.green-ios-button {
+  background-color: #38a897;
+  display: inline-block; 
+  border-radius: 40px; 
+  border: none;
+  text-align: center; 
+  font-family: 'Bai Jamjuree', sans-serif; 
+  font-weight: 400; 
+  color: white; 
+  font-size: 20px; 
+  padding: 15px; 
+}
+
+.blue-mac-button {
+  background-color: #6173FF; 
+  display: inline-block;
+  border-radius: 40px; 
+  border: none;
+  text-align: center; 
+  font-family: 'Bai Jamjuree', sans-serif; 
+  font-weight: 400; 
+  color: white; 
+  font-size: 20px; 
+  padding: 15px; 
+}
+
+.green-ios-button:hover {
+  background-color: #257267;
+}
+
+.blue-mac-button:hover {
+  background-color: #4654bc; 
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background-color: #dce7ee64;
+}
+
+.footer-logo {
+  margin: 4rem 2.5rem;
+  width: 15%;
+}
+
+#footer-links {
+  color: #3d444b;
+  font-weight: 600; 
+  margin-bottom: 2.2rem;
+}
+
+.social-icons {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.social-icons p {
+  font-size: 2.2rem;
+  color: #3d444b; 
+  width: 33%;
+  }
 
 
+/* MOBILE STYLES */
 
+body {
+  text-align: center;
+}
 
+header {
+  background-image: url(../images/bg-header-mobile.png); 
+  background-repeat: no-repeat; 
+  background-size: 100%
+}
 
+header img {
+  margin: 30px;
+}
 
+.green-ios-button {
+  width: 85%; 
+  margin: 20px; 
+}
 
+.blue-mac-button {
+  width: 85%; 
+}
 
+.clipboard-features {
+  margin: 9rem 1.5rem; 
+}
 
+figure img {
+  max-width: 100%; 
+}
 
+.companies {
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+  margin-top: 9rem;
+  margin-bottom: 9rem; 
+}
 
-   
+.companies img {
+  margin: 2rem 3rem;
+}
+
+.bottom-section {
+  margin-bottom: 9rem; 
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -187,9 +319,52 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/*TABLET STYLES*/
+
+@media only screen and (min-width: 768px) {
+  
+  body {
+    font-size: 1.5rem;
+  }
+  
+  header {
+    background-image: url(../images/bg-header-desktop.png); 
+    background-repeat: no-repeat; 
+    background-size: 100%;
+  }
+
+   .buttons {
+    display: flex; 
+    align-items: center;
+    width: 70%; 
+   } 
+
+  .green-ios-button {
+    width: 30%; 
+    }
+
+  .blue-mac-button {
+    width: 30%; 
+    }
+
+
 }
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 1200px) {
+ 
+  body {
+    font-size: 2.0rem;
+  }
+
+  header {
+    width: 40%; 
+  }
+}
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
